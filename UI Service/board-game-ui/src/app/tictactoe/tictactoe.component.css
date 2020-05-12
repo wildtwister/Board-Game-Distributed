@@ -1,0 +1,35 @@
+h2, td {
+  text-align: center;
+}
+
+td {
+  transition: background-color 0.2s ease-in;
+  width: 150px;
+  height: 150px;
+  padding: 0;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  font-size: 6em;
+}
+
+td:first-child {
+  border-left: none;
+}
+
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+table { transition: background-color 0.2s ease-in;
+  border-collapse: collapse;
+}
+
+td:hover {
+  background-color: rgba(43, 255, 0, 0.315);
+}
+
+
+
+
+

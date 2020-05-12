@@ -1,0 +1,21 @@
+<div class="chess flex-container">
+  <h2 class="subtitle">You play as <span>Black/White</span></h2>
+  <table class="board">
+    <tbody>
+      <tr *ngFor="let i of numbers">
+        {{ i + 1 }} <!-- Row enumaration -->
+        <td *ngFor="let j of numbers" [ngClass]="(((i+j)%2) == 0)? 'even': 'odd'" >
+          <div class="grid-item" id="{{i}}_{{j}}" >
+            <div class= "pawn"
+            *ngIf="setPawn(i,j)as pawn"
+            (click)="onSelect(pawn)">{{ pawn.piece }}</div>
+          </div>
+        </td>
+      </tr>
+      <!-- Column Enumeration-->
+      <tr>
+        <td *ngFor="let letter of letters" style="text-align: center;"> {{ letter }} </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

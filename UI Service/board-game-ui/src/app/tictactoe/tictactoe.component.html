@@ -1,0 +1,12 @@
+<h2 *ngIf="(isX ? 'X' : 'O') as curGlyph" >You play with  {{curGlyph}}</h2>
+<table class="board">
+  <tbody>
+    <tr *ngFor="let i of numbers">
+      <td  *ngFor="let j of numbers" [ngClass]="(((i+j)%2) == 0)? 'even': 'odd'" (click)="onSelect(i,j)">
+        {{ glyphs[i][j] }}
+      </td>
+    </tr>
+  </tbody>
+</table>
+<button *ngIf="gameOver" (click)="reset()"> REPLAY </button>
+

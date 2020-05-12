@@ -1,0 +1,59 @@
+@font-face {
+  font-family: chessFont;
+  src: url(./CHEQ_TT.TTF)
+}
+
+.chess {
+  width: 100%;
+  height: 100%;
+}
+
+.subtitle {
+  font-weight: lighter;
+}
+
+.grid-item {
+  cursor: pointer;
+  font-size: 2.5em;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+.pawn {
+  font-family: chessFont;
+}
+
+.even {
+  transition: background-color 0.2s ease-in;
+  background-color: rgb(157, 111, 243);
+}
+
+.even:hover{
+  background-color:rgb(84, 84, 218);
+}
+
+.even:focus{
+  background-color:rgb(76, 76, 184);
+}
+
+.odd {
+  transition: background-color 0.2s ease-in;
+  background-color: rgb(219, 211, 255);
+}
+
+.odd:hover {
+  background-color: rgb(194, 186, 231);
+}
+
+.odd:focus {
+  background-color: rgb(166, 159, 201);
+}
+
+.highlighted {
+  background-color: rgb(255, 230, 0);
+}
+
+.highlighted:hover {
+  background-color: rgb(227, 243, 7);
+}
