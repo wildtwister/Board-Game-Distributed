@@ -1,3 +1,7 @@
+<h1> Online Chess/TictacToe Game Pre-Alpha</h1>
+
+ A very simplistic Ui for TicTactoe and Chess
+
 <h2>In Order to run the UI:</h2>
 <ol>
    <li>Download and install Angular CLI here: https://cli.angular.io/
@@ -13,5 +17,11 @@
    </li>
    <li> 
       Chess does not Reset like Tic Tac Toe, you must refresh the page
+   </li>
+   <li> 
+      Soldiers can move diagonally, should be available only for kill
+   </li>
+   <li> 
+      Pawns of a color don't lock when the other color makes a move
    </li>
 </ul>
