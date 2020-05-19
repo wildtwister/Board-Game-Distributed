@@ -8,6 +8,9 @@ import { TictactoeComponent } from './tictactoe/tictactoe.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { TictactoecellDirective } from './tictactoe/tictactoecell.directive';
+import { AppSelect } from './chess/appselect';
+import { MovePawnDirective } from './chess/move-pawn.directive';
+
 
 @NgModule({
   declarations: [
@@ -16,7 +19,9 @@ import { TictactoecellDirective } from './tictactoe/tictactoecell.directive';
     TictactoeComponent,
     HomeComponent,
     LoginComponent,
-    TictactoecellDirective
+    TictactoecellDirective,
+    AppSelect,
+    MovePawnDirective
   ],
   imports: [
     BrowserModule,

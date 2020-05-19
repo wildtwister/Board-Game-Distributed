@@ -12,12 +12,19 @@
   font-weight: lighter;
 }
 
-.grid-item {
+td {
   cursor: pointer;
-  font-size: 2.5em;
+  font-size: 2em;
+  min-width: 30px;
+  min-height: 30px;
   width: 50px;
   height: 50px;
   text-align: center;
+}
+
+.letter {
+  font-size: 1.5em;
+  vertical-align: top;
 }
 
 .pawn {
@@ -25,7 +32,7 @@
 }
 
 .even {
-  transition: background-color 0.2s ease-in;
+  transition: background-color 0.1s ease-in;
   background-color: rgb(157, 111, 243);
 }
 
@@ -33,12 +40,12 @@
   background-color:rgb(84, 84, 218);
 }
 
-.even:focus{
+.even.selected{
   background-color:rgb(76, 76, 184);
 }
 
 .odd {
-  transition: background-color 0.2s ease-in;
+  transition: background-color 0.1s ease-in;
   background-color: rgb(219, 211, 255);
 }
 
@@ -46,14 +53,15 @@
   background-color: rgb(194, 186, 231);
 }
 
-.odd:focus {
+.odd.selected {
   background-color: rgb(166, 159, 201);
 }
 
-.highlighted {
-  background-color: rgb(255, 230, 0);
+td.highlighted {
+  background-color: rgba(255, 230, 0, 0.63);
 }
 
-.highlighted:hover {
-  background-color: rgb(227, 243, 7);
+td.highlighted:hover {
+  background-color: rgba(227, 243, 7, 0.767);
 }
+

@@ -1,18 +1,16 @@
 import { TestBed } from '@angular/core/testing';
 
-import { PawnService } from './pawn.service';
-import { King } from './pawns/king';
+import { ChessService } from './chess.service';
 
-describe('PawnService', () => {
-  let service: PawnService;
+describe('ChessService', () => {
+  let service: ChessService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(PawnService);
+    service = TestBed.inject(ChessService);
   });
 
   it('should be created', () => {
     expect(service).toBeTruthy();
   });
-
 });
