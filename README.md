@@ -1,8 +1,10 @@
 <h2>In Order to run the UI:</h2>
-1. Download and install Angular CLI here: https://cli.angular.io/
-   OR run <code> npm install -g @angular/cli </code> at your terminal
-2. open a terminal in <code> board-game-ui </code>
-3. run <code>ng serve</code>
+<ol>
+   <li>Download and install Angular CLI here: https://cli.angular.io/
+   OR run <code> npm install -g @angular/cli </code> at your terminal</li>
+   <li>open a terminal in <code> board-game-ui </code> </li>
+   <li>run <code>ng serve</code></li>
+</ol>
 
 <h3> Known Bugs </h3>
 <ul>
